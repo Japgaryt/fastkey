@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="../css/styless.css" />
+    <title>Fast Key | Ingreso Productos</title>
+    
+  </head>
+
+  <body>
+      <!-- Navigation -->
+    <div class="top-nav">
+        <div class="container d-flex">
+          <p>Pide tu licencia inmediata por telefono: (502) 5958-5894</p>
+          <ul class="d-flex">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation">
+          <div class="nav-center container d-flex">
+          <a href="/" class="logo"><h1>Fast Key JP</h1></a>
+  
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="../pages/inicio.html" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/productos.html" class="nav-link">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/proveedores.html" class="nav-link">Proveedores</a>
+              </li>
+              <li class="icons d-flex">
+              <a href="../index.html" class="icon">
+                <i class="bx bx-user"></i>
+              </a>
+              <div class="icon">
+                <i class="bx bx-search"></i>
+              </div>
+              <div class="icon">
+                <i class="bx bx-heart"></i>
+                <span class="d-flex">0</span>
+              </div>
+              <a href="../pages/carrito.html" class="icon">
+                <i class="bx bx-cart"></i>
+                <span class="d-flex">0</span>
+              </a>
+            </li>
+            </ul>
+  
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div> 
+
+
+<!--ingreso de productos-->
+
+  <div class="container" id="productost">
+    <form >
+        <br>
+        <label for="idCodigo">Código</label>
+        <input type="number" class="form-control" id="idCodigo" name="txtCodigo">
+        <br>
+        <label for="idNombre">Nombre</label>
+        <input type="text" class="form-control" id="idNombre" name="txtNombre">
+        
+        <br>
+        <label for="idPrecio">Precio</label>
+        <input type="number" class="form-control" id="idPrecio" name="txtPrecio">
+        <br>
+        <label for="idImagen">Cargar Imagen</label>
+        <input type="file" class="InsertImg" id="idImagen" name="txtImagen" onchange="previewFile()">
+        <img src="" alt="Preview" id="idImagenPrevia">
+        
+        
+        <br>
+        <input type="button" value="Guardar" class="btn btn-success"  onclick="addProducto(), llenarListaProductos()">
+        <br>
+        <br>
+        <table class="table table-bordered table-striped" id="tabla">
+            <thead style="background-color: rgb(10, 80, 68); color: white;">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Existencias</th>
+                </tr>
+            </thead>
+
+            <tbody id="idTableBody">
+               
+            </tbody>
+        </table>
+
+    </form>   
+</div>
+<script src="../js/catalogo.js"></script>
+<script> 
+cargarDatos();
+LlenarTabla();
+
+</script>
+
+    </body>
+ </html>

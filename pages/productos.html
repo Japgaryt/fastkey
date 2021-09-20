@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--Linkeo de Scripts-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Fast Key | Productos</title>
+    
+    
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Pide tu licencia inmediata por telefono: (502) 5958-5894</p>
+        <ul class="d-flex">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+        <div class="nav-center container d-flex">
+        <a href="../index.html" class="logo"><h1>Fast Key JP</h1></a>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="../pages/inicio.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/productos.html" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/proveedores.html" class="nav-link">Proveedores</a>
+            </li>
+            <li class="icons d-flex">
+            <a href="../index.html" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-heart"></i>
+              <span class="d-flex">0</span>
+            </div>
+            <a href="../pages/carrito.html" class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
+            </a>
+          </li>
+          </ul>
+
+        
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+
+        <!--Catalogo de productos-->
+        <div class="container">
+          <form >
+              
+              <table class="table table-bordered table-striped">
+                  <br>
+                  <thead style="background-color: rgb(165, 173, 7); color: white;">
+                      <tr>
+                          <th>Código</th>
+                          <th>Descripción</th>
+                          <th>Precio</th>
+                          <th>Imagen</th>
+                      </tr>
+                  </thead>
+    
+                  <tbody class="tbody" id="idTableBody2">
+                     
+                  </tbody>
+              </table>
+              <div class="btnaproducto">
+              <a href="../pages/rproductos.html">
+                <input type="button" class="aproducto" value="Agregar Producto" />
+             </a>
+            </div>
+          </form>      
+      </div>
+
+    <!-- All Products -->
+    <section class="section all-products" id="products">
+      <div class="top container">
+        <h1>All Products</h1>
+        <form>
+          <select>
+            <option value="1">Defualt Sorting</option>
+            <option value="2">Sort By Price</option>
+            <option value="3">Sort By Popularity</option>
+            <option value="4">Sort By Sale</option>
+            <option value="5">Sort By Rating</option>
+          </select>
+          <span><i class="bx bx-chevron-down"></i></span>
+        </form>
+      </div>
+      <div class="product-center container">
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="../images/p1.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>Office 2016</span>
+            <a href="../productDetails.html">Licencia digital</a>
+            <h4>Q125</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="../images/p2.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>Office 365</span>
+            <a href="">Licencia Digital</a>
+            <h4>Q195</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="../images/p3.png" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>Windows 11</span>
+            <a href="">Licencia Digital</a>
+            <h4>Q250</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="pagination">
+      <div class="container">
+        <span>1</span> <span>2</span> <span>3</span> <span>4</span>
+        <span><i class="bx bx-right-arrow-alt"></i></span>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>Informacion</h4>
+          <a href="">Sobre nosotros</a>
+          <a href="">Contactanos</a>
+          <a href="">Terminos y politicas</a>
+        </div>
+       <!-- <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Customer Services</a>
+          <a href="">Promotion</a>
+          <a href="">Top Brands</a>
+        </div>-->
+        <div class="col d-flex">
+          <span><i class='bx bxl-facebook-square'></i></span>
+          <span><i class='bx bxl-instagram-alt' ></i></span>
+          <span><i class='bx bxl-github' ></i></span>
+          <span><i class='bx bxl-twitter' ></i></span>
+          <span><i class='bx bxl-pinterest' ></i></span>
+        </div>
+      </div>
+    </footer>
+    <!-- Custom Script -->
+    <script src="../js/index.js"></script>
+    <script src="../js/catalogo.js"></script>
+   <script type="text/javascript">
+       cargarDatos();
+       LlenarTablaP();
+   </script>
+   <script src = "../js/carrito.js">  </script>
+  </body>
+</html>
